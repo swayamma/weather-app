@@ -1,0 +1,256 @@
+@font-face {
+    font-family: bold-f;
+    src: url(./Techno_Nue-SemiBold-iF66cd84749f72b.otf);
+}
+*{
+    margin: 0;
+    color:white;
+    /* font-family: bold-f; */
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(85,78,200,1) 0%, rgba(188,64,198,1) 70%, rgba(52,190,217,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data-box{
+    height: 95%;
+    width: 90%;
+    background-color:rgba(255, 255, 255,0.1);
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px 0.1px black;
+    border: 2px solid rgba(255, 255, 255,0.4);
+    display: flex;
+    gap: 20px;
+}
+.left-data{
+    height: 100%;
+    width: 25%;
+    border-top-left-radius:50px ;
+    border-bottom-left-radius: 50px;
+    border-right: 2px solid rgba(255, 255, 255,0.2) ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.current{
+    width: 100%;
+    margin-top: 5%;
+}
+.current-temp{
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-shadow: 0px 5px 15px black;
+}
+.current{
+    margin-left: 30px;
+    width: 100%;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    text-align:left;
+    margin-left: 30px;
+    margin-top: 20%;
+    width: 100%;
+
+}
+.date-data{
+    
+margin-top: -10%;
+    display: flex;
+    flex-direction: column;
+}
+.date h2{
+    font-size: 6.6rem;
+    text-shadow: 0px 5px 15px black;
+}
+.date p{
+    margin-top: 4%;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+    text-shadow: 0px 5px 15px black;
+}
+.temp  h2{
+    font-size: 5.5rem;
+    margin: 0;
+    font-weight: 400;
+}
+.current p, .temp p{
+    margin: 0;
+    margin-top: -5px;
+    font-weight: 400;
+}
+.current-city{
+    font-size: 1.5rem;
+}
+.current-data, .temp-disc{
+    margin-left: 30px;  
+    margin-top: 10px;
+    list-style: none;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+.right-data{
+    margin-top:2% ;
+    height: 90%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.search-bar-input{
+    outline: none;
+    border: none;
+    width: 95%;
+    background-color:rgba(255, 255, 255,0.01);
+    border-radius: 50px;
+    height: fit-content;
+    text-align:center;
+}
+.search-bar{
+    width: 60%;
+    background-color:rgba(255, 255, 255,0.5);
+    border-radius: 50px;
+    height: 5%;
+    text-align:center
+}
+.temp{
+    width: fit-content;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+}
+.temp-disc p{
+    margin-top: 1%;
+    text-wrap: wrap;
+    width: 80%;
+}
+.wind{
+    font-weight:500;
+    width: 100%;
+    display: flex;
+    font-size: 1rem;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.search-data{
+    display: none; /* This line is correct */
+    margin-top: 20px;
+    width: 100%;
+}
+.permisionLayout{
+    width: 100%;
+    height: 110%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+
+
+}
+#getloacation{
+    color:rgba(255, 255, 255, 1); ;
+    background: linear-gradient(90deg, rgba(85,78,200,1) 0%, rgba(188,64,198,1) 70%, rgba(52,190,217,1) 100%);
+    bottom: none;
+    border: 1.5px solid black;
+    outline: none;
+    border-radius: 30px;
+    height:50px;
+    width: 20%;
+}
+
+@media screen and (max-width:480px) {
+    .data-box{
+        width: 80%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+    }
+    .left-data{
+        /* background-color: aqua; */
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        border-right: none;
+    }
+    .current{
+        height: 50px;
+        width: 30px;
+        font-size: 1rem;
+        margin-right: 65px;
+        
+    }
+    .current h2{
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 3.3rem;
+        margin-top: -2px;
+    }
+    .current p{
+        font-size: 1.0rem;
+    }
+    .date{
+        height: 20vh;
+        width: 50%;
+        margin-top: 15px;
+    }
+    .temp-disc{
+        display: none;
+    }
+    .current-data{
+        height: fit-content;
+        width: fit-content;
+        background-color: pink;
+        margin-top: 250px;
+        display: none;
+    }
+    .date h2{
+        font-size: 4.2rem;
+    }
+    .date p{
+        font-size: 1.5rem;
+    }
+    .right-data{
+ 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* background-color: aqua; */
+        border-radius: 30px;
+    }
+    .search-bar{
+        width: 80%;
+    }
+    .permisionLayout{
+        width: 100%;
+    }
+    #getloacation{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+        border-radius: 20px;
+    }
+    .fa-solid{
+        display: none;
+    }
+    .search-data{
+        margin-left: 30px;
+        display: flex;
+        gap: 20%;
+    }
+    .temp h2{
+        font-size: 3.0rem;
+    }
+    .temp p{
+        font-size: 2rem;
+    }
+}

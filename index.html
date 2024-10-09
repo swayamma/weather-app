@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- background grdaient -->
+    <div class="background">
+
+      <!-- transparent box -->
+      
+        <div class="data-box">
+     
+
+          <!-- left side data -->
+           
+          <div class="left-data">
+
+              <!-- upper current data -->
+            <div class="current">
+            
+              <h2 class="current-temp">00&#176;C</h2>
+              <p> <span class="current-city">nagpur</span>
+              <i class="fa-solid fa-location-dot" style="margin-left:10px;position: relative;"></i></p>
+              <p class="country-code" style="font-size: 1.5rem;">IN</p>
+              <p class="current-weather">cloudy</p>
+            </div>  
+
+            <div class="current-data">
+                <li>wind : <span class="current-wind"></span></li>
+                <li>longitude : <span class="current-lon"></span> </li>
+                <li>latitude : <span class="current-location-lat"></span> </li>
+                <li >Humidity : <span class="humidity"></span></li>
+            </div>
+
+            <!-- lower date and time section -->
+            <div class="date">
+              
+              <h2 class="currentDate">07</h2>
+              <div class="date-data">
+              <p class="day" style="font-weight: 500;" >Monday</p>
+
+              <div  class="timeLayout" style="display: flex; width: 100%;">
+              <p class="current-hour">22:</p>
+              <p class="current-minutes">00</p></div>
+            </div>
+            </div>
+           </div>
+
+            <!-- right side data -->
+             <div class="right-data">
+
+
+            <!-- top search bar -->
+            <div class="search-bar">
+              <input type="text" class="search-bar-input" placeholder="search your location">
+              <i class="fa-solid fa-magnifying-glass search-btn"></i>
+            </div>
+            
+
+             <!-- search data -->
+             <div class="search-data">
+
+              <div class="temp">
+                <h2 class="searchTemp">30&#176;C</h2>
+              <p id="search-city">Mumbai<i class="fa-solid fa-location-dot" style="margin-left:15px;position: relative;"></i></i></p>
+              <p id="search-weather">rainy</p>
+              </div>
+
+              <div class="temp-disc">
+                <p>Mumbai’s name change from Bombay to Mumbai in 1995 was to reflect and re-glorify the Maratha culture and pay tribute to the local goddess Mumbadevi.</p>
+              </div>
+
+              <div class="wind">
+                <p >wind: <span  id="search-wind"></span> <i class="fa-solid fa-wind"></i></p>
+                <p> temp: 00 <span class="searchTempSide"></span> &#176;</p>
+                <p> lat: <span class="searchLat"></span></p>
+                <p> lon:  <span class="searchLong"></span></p>
+                <p> humidity:<span id="search-humidity"></span></p></div>
+             </div>
+
+             <div class="permisionLayout">
+              <button id="getloacation">Give location permision</button>
+            </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="try.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
