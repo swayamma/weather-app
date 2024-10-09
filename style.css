@@ -168,7 +168,7 @@ margin-top: -10%;
 @media screen and (max-width:480px) {
     .data-box{
         width: 80%;
-        height: 90vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         border-radius: 40px;
