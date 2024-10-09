@@ -253,4 +253,10 @@ margin-top: -10%;
     .temp p{
         font-size: 2rem;
     }
+    .wind{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+    }
 }
