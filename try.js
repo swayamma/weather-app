@@ -77,15 +77,15 @@ async function checkWeather(city) {
     searchData.style.display="none";
     alert("wrong city name")
    }
-  document.querySelector("#search-city").innerHTML = data.name;
+ document.querySelector("#search-city").innerHTML = data.name;
   document.querySelector(".country-code").innerHTML = data.sys.country;
   document.querySelector(".searchTemp").innerHTML = Math.round(data.main.temp) + "&#176;C";
-  document.querySelector(".searchTempSide").innerHTML = Math.round(data.main.temp) + "&#176;C";
+  document.querySelector(".searchTempSide").innerHTML = " temp : " +Math.round(data.main.temp)+ "&#176;C";
   document.querySelector("#search-weather").innerHTML = data.weather[0].main;
-  document.querySelector("#search-wind").innerHTML = data.wind.speed + " km/h";
-  document.querySelector("#search-humidity").innerHTML = data.main.humidity + "%";
-  document.querySelector(".searchLat").innerHTML=data.coord.lat;
-  document.querySelector(".searchLong").innerHTML=data.coord.lat;
+  document.querySelector("#search-wind").innerHTML = "wind : " +data.wind.speed + " km/h";
+  document.querySelector("#search-humidity").innerHTML ="humidity : " +data.main.humidity + "%";
+  document.querySelector(".searchLat").innerHTML="lon : " +data.coord.lat;
+  document.querySelector(".searchLong").innerHTML="lat : " +data.coord.lon;
 }
 
 searchBtn.addEventListener("click", () => {
