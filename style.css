@@ -95,6 +95,9 @@ margin-top: -10%;
     font-weight: 500;
     text-wrap: nowrap;
 }
+.time-disc{
+    diplay:block;
+}
 .right-data{
     margin-top:2% ;
     height: 90%;
